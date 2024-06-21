@@ -1,9 +1,9 @@
-*{
-    color: var(--branco);
+body{
+    background-color: var(--cor-de-fundo);
 }
 
-body {
-    background-color: var(--cor-de-fundo);
+*{
+    color: var(--branco);
 }
 
 :root{
@@ -55,37 +55,40 @@ body {
     border-radius: 0 0 20px 20px;
 }
 
-span{
-    color: var(--verde);
-}
-
-.botao.ativo {
+.botao.ativo{
     background-color: var(--botao-ativo);
-    border-bottom: 2px solid var(--verde);
+    border-bottom: 2px solid #5FFF57;
 }
 
-.abas-conteudo {
+
+.abas-conteudo{
     display: none;
+    background-color:rgb(35 33 52 / 50%)
+}
+.abas-conteudo.ativo{
+    display: block;
+    background-color: var(--botao-inativo);
 }
 
-.abas-conteudo.ativo {
-    display: block;
+.aba-conteudo-titulo-principal{
+    font-size: 28px;
+    background-color: rgb(35 33 52 / 50%)
 }
-.abas-texto {
-    background-color: var(--botao-ativo);
+.aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: var(--verde);
+    text-transform: uppercase;
+    background-color: rgb(35 33 52 / 50%)
+}
+
+.abas-texto{
+    background-color: var(--botao-inativo);
     padding: 40px;
     border-radius: 15px;
 }
 
-.aba-conteudo-titulo-principal {
-    font-size: 28px;
-    text-align: center;
-}
-
-.aba-conteudo-titulo-principal {
-    text-align: center;
+span{
     color: var(--verde);
-    text-transform: uppercase;
 }
 
 @media screen and (min-width: 700px){
@@ -102,10 +105,6 @@ span{
     }
 } 
 
-.ativo{
-    background-color: var(--botao-ativo);
-    border-color: #5FFF57;
-}
 
 
 
